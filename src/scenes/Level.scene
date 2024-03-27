@@ -4,11 +4,19 @@
     "settings": {
         "preloadPackFiles": [],
         "createMethodName": "editorCreate",
-        "sceneKey": "Level",
-        "borderWidth": 1280,
-        "borderHeight": 720
+        "sceneKey": "Level"
     },
     "displayList": [
+        {
+            "type": "Image",
+            "id": "cec14f5e-94cc-410b-9ec3-1cc41c91b1b7",
+            "label": "sky",
+            "texture": {
+                "key": "sky"
+            },
+            "originX": 0,
+            "originY": 0
+        },
         {
             "type": "Image",
             "id": "7d5827fd-34f6-473f-90e0-b9424a51d5fa",
@@ -19,8 +27,8 @@
             "texture": {
                 "key": "dino"
             },
-            "x": 640,
-            "y": 288,
+            "x": 395,
+            "y": 284,
             "list": [
                 {
                     "prefabId": "a06ed60b-79f1-4444-bf35-89046f71f954",
@@ -60,11 +68,11 @@
             "type": "Text",
             "id": "b2b3dbd5-2106-41fa-8a04-9b511e3401a9",
             "label": "welcome",
-            "x": 640,
-            "y": 478,
+            "x": 394,
+            "y": 461,
             "originX": 0.5,
             "originY": 0.5,
-            "text": "Phaser 3 + Phaser Editor 2D",
+            "text": "hello world2222",
             "fontFamily": "Arial",
             "fontSize": "30px",
             "list": [

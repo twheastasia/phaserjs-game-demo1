@@ -16,8 +16,12 @@ class Level extends Phaser.Scene {
 	/** @returns {void} */
 	editorCreate() {
 
+		// sky
+		const sky = this.add.image(0, 0, "sky");
+		sky.setOrigin(0, 0);
+
 		// dino
-		const dino = this.add.image(640, 288, "dino");
+		const dino = this.add.image(395, 284, "dino");
 		dino.setInteractive(new Phaser.Geom.Rectangle(0, 0, 250, 250), Phaser.Geom.Rectangle.Contains);
 
 		// onPointerDownScript
@@ -33,9 +37,9 @@ class Level extends Phaser.Scene {
 		const moveInSceneActionScript = new MoveInSceneActionScript(onAwakeScript);
 
 		// welcome
-		const welcome = this.add.text(640, 478, "", {});
+		const welcome = this.add.text(394, 461, "", {});
 		welcome.setOrigin(0.5, 0.5);
-		welcome.text = "Phaser 3 + Phaser Editor 2D";
+		welcome.text = "hello world2222";
 		welcome.setStyle({ "fontFamily": "Arial", "fontSize": "30px" });
 
 		// onAwakeScript_1
