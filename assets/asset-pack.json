@@ -3,8 +3,8 @@
         "files": [
             {
                 "url": "assets/dino.png",
-                "key": "dino",
-                "type": "image"
+                "type": "image",
+                "key": "dino"
             }
         ]
     },
@@ -12,6 +12,7 @@
         "app": "Phaser Editor 2D - Asset Pack Editor",
         "contentType": "phasereditor2d.pack.core.AssetContentType",
         "url": "https://phasereditor2d.com",
-        "version": 2
+        "version": 2,
+        "showAllFilesInBlocks": false
     }
 }

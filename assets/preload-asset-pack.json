@@ -2,10 +2,36 @@
     "section1": {
         "files": [
             {
-                "url": "assets/dude.png",
+                "url": "assets/bomb.png",
                 "frameConfig": {
                     "frameWidth": 32,
                     "frameHeight": 32,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "bomb"
+            },
+            {
+                "url": "assets/diamond.png",
+                "frameConfig": {
+                    "frameWidth": 32,
+                    "frameHeight": 32,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "diamond"
+            },
+            {
+                "url": "assets/dude.png",
+                "frameConfig": {
+                    "frameWidth": 32,
+                    "frameHeight": 48,
                     "startFrame": 0,
                     "endFrame": -1,
                     "spacing": 0,
@@ -20,9 +46,35 @@
                 "key": "guapen"
             },
             {
+                "url": "assets/platform.png",
+                "frameConfig": {
+                    "frameWidth": 32,
+                    "frameHeight": 32,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "platform"
+            },
+            {
                 "url": "assets/sky.png",
                 "type": "image",
                 "key": "sky"
+            },
+            {
+                "url": "assets/star.png",
+                "frameConfig": {
+                    "frameWidth": 32,
+                    "frameHeight": 32,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "star"
             }
         ]
     },

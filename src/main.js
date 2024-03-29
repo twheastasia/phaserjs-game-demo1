@@ -9,7 +9,13 @@ window.addEventListener('load', function () {
 		scale: {
 			mode: Phaser.Scale.FIT,
 			autoCenter: Phaser.Scale.CENTER_BOTH
-		}
+		},
+        physics: {
+            default: 'arcade',
+            arcade: {
+                gravity: { y: 200 }
+            }
+        }
 	});
 
 	game.scene.add("Preload", Preload);
@@ -20,12 +26,11 @@ window.addEventListener('load', function () {
 class Boot extends Phaser.Scene {
 
 	preload() {
-		
 		this.load.pack("pack", "assets/preload-asset-pack.json");
+		this.load.pack("pack2", "assets/asset-pack.json");
 	}
 
 	create() {
-
 		this.scene.start("Preload");
 	}
 }

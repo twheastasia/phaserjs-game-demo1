@@ -40,7 +40,7 @@ class Level extends Phaser.Scene {
 		const welcome = this.add.text(394, 461, "", {});
 		welcome.setOrigin(0.5, 0.5);
 		welcome.text = "hello world2222";
-		welcome.setStyle({ "fontFamily": "Arial", "fontSize": "30px" });
+		welcome.setStyle({ "backgroundColor": "", "fontFamily": "Arial", "fontSize": "30px" });
 
 		// onAwakeScript_1
 		const onAwakeScript_1 = new OnAwakeScript(welcome);

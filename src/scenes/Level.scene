@@ -75,6 +75,7 @@
             "text": "hello world2222",
             "fontFamily": "Arial",
             "fontSize": "30px",
+            "backgroundColor": "",
             "list": [
                 {
                     "prefabId": "7028a0e2-cd14-44b7-b2a4-68dac16ece00",
