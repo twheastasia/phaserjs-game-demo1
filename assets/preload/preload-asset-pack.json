@@ -2,9 +2,14 @@
     "section1": {
         "files": [
             {
-                "url": "assets/dino.png",
+                "url": "assets/preload/guapen.png",
                 "type": "image",
-                "key": "dino"
+                "key": "guapen"
+            },
+            {
+                "url": "src/scenes/Preload.js",
+                "type": "script",
+                "key": "Preload"
             }
         ]
     },

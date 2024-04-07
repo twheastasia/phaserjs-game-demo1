@@ -2,7 +2,7 @@
     "section1": {
         "files": [
             {
-                "url": "assets/bomb.png",
+                "url": "assets/level/bomb.png",
                 "frameConfig": {
                     "frameWidth": 32,
                     "frameHeight": 32,
@@ -15,7 +15,7 @@
                 "key": "bomb"
             },
             {
-                "url": "assets/diamond.png",
+                "url": "assets/level/diamond.png",
                 "frameConfig": {
                     "frameWidth": 32,
                     "frameHeight": 32,
@@ -28,7 +28,12 @@
                 "key": "diamond"
             },
             {
-                "url": "assets/dude.png",
+                "url": "assets/level/dino.png",
+                "type": "image",
+                "key": "dino"
+            },
+            {
+                "url": "assets/level/dude.png",
                 "frameConfig": {
                     "frameWidth": 32,
                     "frameHeight": 48,
@@ -41,30 +46,17 @@
                 "key": "dude"
             },
             {
-                "url": "assets/guapen.png",
+                "url": "assets/level/platform.png",
                 "type": "image",
-                "key": "guapen"
-            },
-            {
-                "url": "assets/platform.png",
-                "frameConfig": {
-                    "frameWidth": 32,
-                    "frameHeight": 32,
-                    "startFrame": 0,
-                    "endFrame": -1,
-                    "spacing": 0,
-                    "margin": 0
-                },
-                "type": "spritesheet",
                 "key": "platform"
             },
             {
-                "url": "assets/sky.png",
+                "url": "assets/level/sky.png",
                 "type": "image",
                 "key": "sky"
             },
             {
-                "url": "assets/star.png",
+                "url": "assets/level/star.png",
                 "frameConfig": {
                     "frameWidth": 32,
                     "frameHeight": 32,
