@@ -20,47 +20,32 @@ class Level extends Phaser.Scene {
 		const sky = this.add.image(0, 0, "sky");
 		sky.setOrigin(0, 0);
 
-		// dino
-		const dino = this.add.image(395, 284, "dino");
-		dino.setInteractive(new Phaser.Geom.Rectangle(0, 0, 250, 250), Phaser.Geom.Rectangle.Contains);
+		// platform
+		const platform = this.add.sprite(0, 538, "platform");
+		platform.scaleX = 2;
+		platform.scaleY = 2;
+		platform.setOrigin(0, 0);
 
-		// onPointerDownScript
-		const onPointerDownScript = new OnPointerDownScript(dino);
+		// platform_1
+		this.add.sprite(66, 325, "platform");
 
-		// pushActionScript
-		new PushActionScript(onPointerDownScript);
+		// platform_2
+		this.add.sprite(598, 427, "platform");
 
-		// onAwakeScript
-		const onAwakeScript = new OnAwakeScript(dino);
+		// platform_3
+		this.add.sprite(713, 200, "platform");
 
-		// moveInSceneActionScript
-		const moveInSceneActionScript = new MoveInSceneActionScript(onAwakeScript);
+		// turn
+		const turn = this.add.sprite(327, 433, "dude", 4);
+		turn.play("turn");
 
-		// welcome
-		const welcome = this.add.text(394, 461, "", {});
-		welcome.setOrigin(0.5, 0.5);
-		welcome.text = "hello world2222";
-		welcome.setStyle({ "backgroundColor": "", "fontFamily": "Arial", "fontSize": "30px" });
+		// left
+		const left = this.add.sprite(195, 417, "dude", 0);
+		left.play("left");
 
-		// onAwakeScript_1
-		const onAwakeScript_1 = new OnAwakeScript(welcome);
-
-		// fadeActionScript
-		const fadeActionScript = new FadeActionScript(onAwakeScript_1);
-
-		// moveInSceneActionScript (prefab fields)
-		moveInSceneActionScript.from = "TOP";
-
-		// moveInSceneActionScript (components)
-		const moveInSceneActionScriptDurationConfigComp = new DurationConfigComp(moveInSceneActionScript);
-		moveInSceneActionScriptDurationConfigComp.duration = 1000;
-
-		// fadeActionScript (prefab fields)
-		fadeActionScript.fadeDirection = "FadeIn";
-
-		// fadeActionScript (components)
-		const fadeActionScriptDurationConfigComp = new DurationConfigComp(fadeActionScript);
-		fadeActionScriptDurationConfigComp.duration = 1500;
+		// right
+		const right = this.add.sprite(377, 290, "dude", 5);
+		right.play("right");
 
 		this.events.emit("scene-awake");
 	}

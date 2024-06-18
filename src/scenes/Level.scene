@@ -18,86 +18,86 @@
             "originY": 0
         },
         {
-            "type": "Image",
-            "id": "7d5827fd-34f6-473f-90e0-b9424a51d5fa",
-            "label": "dino",
-            "hitArea.shape": "RECTANGLE",
-            "hitArea.width": 250,
-            "hitArea.height": 250,
+            "type": "Sprite",
+            "id": "d5e6dbdf-d048-490c-824d-3e3044c280eb",
+            "label": "platform",
             "texture": {
-                "key": "dino"
+                "key": "platform"
             },
-            "x": 395,
-            "y": 284,
-            "list": [
-                {
-                    "prefabId": "a06ed60b-79f1-4444-bf35-89046f71f954",
-                    "id": "f10cc69a-251a-4bca-81de-f36affc5660b",
-                    "label": "onPointerDownScript",
-                    "list": [
-                        {
-                            "prefabId": "0e39177a-6e19-4b56-a7c2-2360a2e41505",
-                            "id": "56235873-9538-4e47-ad25-cd1e90b15b55",
-                            "label": "pushActionScript"
-                        }
-                    ]
-                },
-                {
-                    "prefabId": "7028a0e2-cd14-44b7-b2a4-68dac16ece00",
-                    "id": "462f8b1c-5491-4b71-bfd9-2117963748b4",
-                    "label": "onAwakeScript",
-                    "list": [
-                        {
-                            "prefabId": "3d337935-cdca-4937-9126-9f75bc2486de",
-                            "id": "cbb22a0e-7823-45c8-a238-90a531752c00",
-                            "unlock": [
-                                "from"
-                            ],
-                            "label": "moveInSceneActionScript",
-                            "from": "TOP",
-                            "components": [
-                                "DurationConfigComp"
-                            ],
-                            "DurationConfigComp.duration": 1000
-                        }
-                    ]
-                }
-            ]
+            "y": 538,
+            "scaleX": 2,
+            "scaleY": 2,
+            "originX": 0,
+            "originY": 0
         },
         {
-            "type": "Text",
-            "id": "b2b3dbd5-2106-41fa-8a04-9b511e3401a9",
-            "label": "welcome",
-            "x": 394,
-            "y": 461,
-            "originX": 0.5,
-            "originY": 0.5,
-            "text": "hello world2222",
-            "fontFamily": "Arial",
-            "fontSize": "30px",
-            "backgroundColor": "",
-            "list": [
-                {
-                    "prefabId": "7028a0e2-cd14-44b7-b2a4-68dac16ece00",
-                    "id": "78e2cecc-8445-45e8-bb7d-567f39c97d9c",
-                    "label": "onAwakeScript_1",
-                    "list": [
-                        {
-                            "prefabId": "978fd4e0-a722-4061-a6d9-86748db8a38a",
-                            "id": "9e9ce046-41b1-40fd-8c59-620a4df7fcaf",
-                            "unlock": [
-                                "fadeDirection"
-                            ],
-                            "label": "fadeActionScript",
-                            "fadeDirection": "FadeIn",
-                            "components": [
-                                "DurationConfigComp"
-                            ],
-                            "DurationConfigComp.duration": 1500
-                        }
-                    ]
-                }
-            ]
+            "type": "Sprite",
+            "id": "2a02f434-29c2-4f13-a6bd-c0360e4172d6",
+            "label": "platform_1",
+            "texture": {
+                "key": "platform"
+            },
+            "x": 66,
+            "y": 325
+        },
+        {
+            "type": "Sprite",
+            "id": "639e1bdb-c9e6-4772-bf02-a5d24033a047",
+            "label": "platform_2",
+            "texture": {
+                "key": "platform"
+            },
+            "x": 598,
+            "y": 427
+        },
+        {
+            "type": "Sprite",
+            "id": "7be94863-da32-4398-9042-414dc1c43434",
+            "label": "platform_3",
+            "texture": {
+                "key": "platform"
+            },
+            "x": 713,
+            "y": 200
+        },
+        {
+            "type": "Sprite",
+            "id": "52d5b7d3-8835-4d0d-b1a9-8b64668ce33d",
+            "label": "turn",
+            "texture": {
+                "key": "dude",
+                "frame": 4
+            },
+            "x": 327,
+            "y": 433,
+            "animationPlayMethod": 1,
+            "animationKey": "turn"
+        },
+        {
+            "type": "Sprite",
+            "id": "d73b71be-eb98-4684-9154-6e803f06e752",
+            "label": "left",
+            "texture": {
+                "key": "dude",
+                "frame": 0
+            },
+            "x": 195,
+            "y": 417,
+            "animationPlayMethod": 1,
+            "animationKey": "left"
+        },
+        {
+            "type": "Sprite",
+            "id": "b0931cd7-7532-4778-ad71-b7ac26cd9536",
+            "label": "right",
+            "texture": {
+                "key": "dude",
+                "frame": 5
+            },
+            "x": 377,
+            "y": 290,
+            "animationPlayMethod": 1,
+            "animationKey": "right"
         }
     ],
     "plainObjects": [],
