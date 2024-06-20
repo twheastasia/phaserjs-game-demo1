@@ -18,7 +18,7 @@
             "originY": 0
         },
         {
-            "type": "Sprite",
+            "type": "ArcadeImage",
             "id": "d5e6dbdf-d048-490c-824d-3e3044c280eb",
             "label": "platform",
             "texture": {
@@ -28,50 +28,69 @@
             "scaleX": 2,
             "scaleY": 2,
             "originX": 0,
-            "originY": 0
+            "originY": 0,
+            "body.width": 400,
+            "body.height": 32
         },
         {
-            "type": "Sprite",
+            "type": "ArcadeImage",
             "id": "2a02f434-29c2-4f13-a6bd-c0360e4172d6",
             "label": "platform_1",
             "texture": {
                 "key": "platform"
             },
             "x": 66,
-            "y": 325
+            "y": 325,
+            "body.width": 400,
+            "body.height": 32
         },
         {
-            "type": "Sprite",
+            "type": "ArcadeImage",
             "id": "639e1bdb-c9e6-4772-bf02-a5d24033a047",
             "label": "platform_2",
             "texture": {
                 "key": "platform"
             },
             "x": 598,
-            "y": 427
+            "y": 427,
+            "body.width": 400,
+            "body.height": 32
         },
         {
-            "type": "Sprite",
+            "type": "ArcadeImage",
             "id": "7be94863-da32-4398-9042-414dc1c43434",
             "label": "platform_3",
             "texture": {
                 "key": "platform"
             },
             "x": 713,
-            "y": 200
+            "y": 200,
+            "body.width": 400,
+            "body.height": 32
         },
         {
-            "type": "Sprite",
+            "type": "ArcadeSprite",
             "id": "52d5b7d3-8835-4d0d-b1a9-8b64668ce33d",
-            "label": "turn",
+            "label": "player",
+            "displayName": "dude",
+            "hitArea.shape": "RECTANGLE",
+            "hitArea.width": 32,
+            "hitArea.height": 48,
             "texture": {
                 "key": "dude",
                 "frame": 4
             },
             "x": 327,
             "y": 433,
-            "animationPlayMethod": 1,
-            "animationKey": "turn"
+            "ArcadeComponent.active": true,
+            "body.velocity.x": 200,
+            "body.velocity.y": 200,
+            "body.gravity.x": 200,
+            "body.gravity.y": 200,
+            "allowGravity": false,
+            "body.bounce.x": 0.2,
+            "body.width": 33,
+            "body.height": 50
         },
         {
             "type": "Sprite",
@@ -100,7 +119,14 @@
             "animationKey": "right"
         }
     ],
-    "plainObjects": [],
+    "plainObjects": [
+        {
+            "id": "7d237496-35fa-4708-80d4-d02f29bda043",
+            "type": "Collider",
+            "label": "collider",
+            "scope": "LOCAL"
+        }
+    ],
     "meta": {
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
