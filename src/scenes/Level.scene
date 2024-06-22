@@ -29,6 +29,7 @@
             "scaleY": 2,
             "originX": 0,
             "originY": 0,
+            "physicsType": 1,
             "body.width": 400,
             "body.height": 32
         },
@@ -41,6 +42,7 @@
             },
             "x": 66,
             "y": 325,
+            "physicsType": 1,
             "body.width": 400,
             "body.height": 32
         },
@@ -53,6 +55,7 @@
             },
             "x": 598,
             "y": 427,
+            "physicsType": 1,
             "body.width": 400,
             "body.height": 32
         },
@@ -65,6 +68,7 @@
             },
             "x": 713,
             "y": 200,
+            "physicsType": 1,
             "body.width": 400,
             "body.height": 32
         },
@@ -83,12 +87,14 @@
             "x": 327,
             "y": 433,
             "ArcadeComponent.active": true,
-            "body.velocity.x": 200,
             "body.velocity.y": 200,
-            "body.gravity.x": 200,
             "body.gravity.y": 200,
-            "allowGravity": false,
             "body.bounce.x": 0.2,
+            "body.bounce.y": 0.2,
+            "collideWorldBounds": true,
+            "useDamping": true,
+            "allowRotation": false,
+            "immovable": true,
             "body.width": 33,
             "body.height": 50
         },
@@ -100,7 +106,7 @@
                 "key": "dude",
                 "frame": 0
             },
-            "x": 195,
+            "x": 201,
             "y": 417,
             "animationPlayMethod": 1,
             "animationKey": "left"
@@ -117,6 +123,17 @@
             "y": 290,
             "animationPlayMethod": 1,
             "animationKey": "right"
+        },
+        {
+            "prefabId": "00a45d15-b955-4d14-a139-2d2129f0de53",
+            "id": "15bb73f4-29b2-4e5f-bd6d-9994e093eda3",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "playerPrefab",
+            "x": 282,
+            "y": 408
         }
     ],
     "plainObjects": [
@@ -124,7 +141,17 @@
             "id": "7d237496-35fa-4708-80d4-d02f29bda043",
             "type": "Collider",
             "label": "collider",
-            "scope": "LOCAL"
+            "scope": "LOCAL",
+            "object1": "player",
+            "object2": "platform_1"
+        },
+        {
+            "id": "f873c300-d9ff-4c78-8e3f-a73df30b584c",
+            "type": "Collider",
+            "label": "collider_1",
+            "scope": "LOCAL",
+            "object1": "player",
+            "object2": "platform"
         }
     ],
     "meta": {
